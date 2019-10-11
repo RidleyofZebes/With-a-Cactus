@@ -1,0 +1,445 @@
+/*
+Theme Name: With a Cactus
+Theme URI: http://themes.withacact.us/WithACactus
+Author: RidleyofZebes
+Author URI: http://www.withacact.us/
+Description: With a Cactus is a Wordpress theme developed by RidleyofZebes aka Joey Honeycutt specifically for his blog at withacact.us.
+Version: 0.1alpha
+*/
+
+@font-face {
+	font-family: Simply Rounded;
+	src: url('resource/Simply Rounded.ttf') format('truetype');
+	}
+	
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+	}
+	
+
+body { 
+	position: absolute;
+	margin: 0 auto;
+	top: 0; right: 0; bottom: 0; left: 0;
+	font-family: Arial, sans-serif; 
+	font size: 14px;	
+	background-image: url('resource/background05.jpg');
+	color: #e0e0e0;
+	background-color: #000; 
+	min-width: 645px;
+ 	/*	
+	margin: 0; 
+	padding: 0; 
+	*/
+	}
+
+a:link,
+a:visited {
+	color: #a7d48d;
+	text-decoration: none;
+	}
+	
+p {
+	line-height: 1.65em;
+	}
+
+/* Image Styles */
+	
+img {
+	max-width: 100%;
+	height: auto;
+	}	
+img.alignright { 
+	float: right; 
+	margin: 0 0 1em 1em; 
+	}
+img.alignleft { 
+	float: left; 
+	margin: 0 1em 1em 0; 
+	}
+img.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; }
+.alignright { 
+	float: right; 
+	}
+.alignleft { 
+	float: left; 
+	}
+.aligncenter { 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	}
+.wp-caption {
+	background-color: #555;
+	text-align: center;
+	padding: 7px 7px 0 7px;
+	margin: 0 15px 5px 0;
+	border-radius: 10px;
+	}
+.wp-caption-text {
+	font-style: italic;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 110%;
+	} 
+
+/* General Layout */
+
+/* Header */
+.site-header {
+	border-bottom: 2px solid #999;
+	position: relative;
+	}
+.site-logo {
+	width: 150px;
+	height: 150px;
+	padding: 10px 10px 10px 0;
+	display: inline;
+	vertical-align: -155%;
+	}
+.site-title{
+	font-family: Simply Rounded, Arial, sans-serif;
+	font-size: 72px;
+	display: inline;
+	}
+.site-social{
+	width: 40px;
+	height: 40px;
+	display: inline;
+	margin-left: 25px;
+	}
+.tagline {
+	font-family: Simply Rounded, Arial, sans-serif;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	}
+
+/* Page layout */
+
+
+/* Content Styles*/
+
+	/* Body */
+	
+	div.container {
+		max-width: 95%;
+		margin: 0 auto;
+		padding: 0;
+		background-color: rgba(0,0,0,0.6);
+		border-left: 2px #333 solid;
+		border-right: 2px #333 solid;
+		box-shadow: -5px 0 8px 2px #111, 5px 0 8px 2px #111;
+		}
+	
+	article.post {
+		background-color: rgba(0,0,0,0.7);
+		border-radius: 25px;
+		margin: 15px 5px;
+		}
+		
+	/* Standard Post */	
+
+	article.post-blog {
+		position: relative;
+		padding: 3px 30px;
+		height: 220px;
+		z-index: 5;
+		}
+		
+	.post-image { 
+		position: absolute;
+		height: 225px;
+		width: 350px;
+		border-radius: 25px 0 0 25px;
+		margin: -3px -30px;
+		z-index: -1;
+		filter: brightness(40%);
+		}
+		
+	.post-meta {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-right: 30px;
+		font-size: 87%;
+		color: #999;		
+		}
+		
+	h1.post-title {
+		}
+		
+	/* Single Post */
+	.banner-image {
+		position: relative;
+		border-radius: 25px 25px 0 0;
+		box-shadow:
+			inset -7px 0 0 rgba(0,0,0,0.8),
+			inset 7px 0 0 rgba(0,0,0,0.8),
+			inset 0 7px 0 rgba(0,0,0,0.8);
+		width: 100%;
+		height: 210px;
+		margin: -1px 0 0 -10px;
+		padding: 0 20px 0 0;
+		}
+
+	.banner-title {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		background-color: rgba(0,0,0,0.6);
+		border-radius: 25px 0 25px 0;
+		display: inline-block;
+		padding: 3px 15px;
+		font-family: Simply Rounded, Arial, sans-serif;
+		font-size: 48px;
+		}
+	.banner-meta {
+		position: absolute;
+		float: right;
+		right: 0px;
+		top: 185px;
+		background-color: rgba(0,0,0,0.6);
+		display: inline-block;
+		border-radius: 25px 0 0 0;
+		padding: 3px 15px;
+		}
+		
+	p.post-info {
+		text-align: right;
+		font-size: 87%;
+		color: #999;
+		}
+	
+	p.post-info a:link,
+	p.post-info a:visited {
+		color: #999;
+		text-decoration: underline;
+		}
+		
+	/* Aside Post */
+	article.post-aside {
+		position: relative;
+		font-size: 125%;
+		background: rgba(167,212,141,0.8);
+		color: #222;
+		margin-top: 10px;
+		padding: 2px 20px;
+		border-radius: 10px;
+		min-height: 100px;
+		}
+		
+	div.post-aside:before {
+		font-family: Arial, Helvetica, sans-serif;
+		content: "\201C";
+		color: rgba(0,0,0,0.4);
+		pointer-events: none;
+		filter: blur(2px);
+		font-size: 275px;
+		position: absolute;
+		margin-top: -55px;
+		}
+		
+	.aside-meta{
+		position: absolute;
+		bottom: -8px;
+		right: 0;
+		padding-right: 30px;
+		font-size: 68%;
+		color: #777;
+		}
+	
+	/* Video Post */
+	article.post-video {
+		}
+		
+	/* Link Post */
+	article.post-link {
+		padding: 1px 10px;
+		background-color: #000;
+		border-radius: 0px;
+		text-align: center;
+		position: relative;		
+		min-height: 100px;
+		}
+	article.post-link:after {
+		font-family: Arial, Helvetica, sans-serif;
+		content: "http://";
+		color: rgba(167,212,141,0.4);
+		position: absolute;
+		left: 20px;
+		top: 0;
+		font-size: 55px;
+		filter: blur(3px);
+		pointer-events: none;
+		
+		margin-top: 15px;
+		}
+	.link-meta {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding-right: 15px;
+		font-size: 68%;
+		color: #777;
+		}
+
+		
+	/* Gallery Post */
+	article.post-gallery {
+		}
+	
+	
+/* Sliding Menu Styles */
+.hamburgerMenu {
+	z-index: 1001;
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 10px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+.slidingMenu {
+	z-index: 1000;
+	background: #444;
+	background-color: rgba(0,0,0,0.8);
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	right: -260px;
+	top: 0;
+	border-left: 2px #333 solid;
+	box-shadow: -5px 0 8px 2px #111;
+	}
+
+h1.menuHead {
+	font-family: Simply Rounded, Arial, sans-serif;
+	position: relative;
+	top: -52px;
+	padding: 0 0 20px 80px;
+	border-bottom: 1px solid #999;
+	}
+
+.sidebar { 
+ 	overflow-y: auto;
+	overflow-x: hidden;
+	position: relative;
+	padding-left: 20px;
+	margin-top: -73px;
+	height: calc(100% - 115px);
+	background-color: rgba(0,0,0,0.3);
+	}
+	
+.sideMenu-logo {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 15px;
+	left: 15px;
+	display: inline-block;
+	}
+
+.sidebarLogin {
+	position: fixed;
+	bottom: 0;
+	padding: 5px 103px;
+	width: 100%;
+	border-top: 1px solid #999;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.6);
+	}
+	
+	
+@keyframes menuOpen {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(25deg);
+	}
+	80% {
+		transform: rotate(-115deg);
+	}
+	100% {
+		transform: rotate(-90deg);
+	}
+}
+
+@keyframes menuClose {
+	0% {
+		transform: rotate(-90deg);
+	}
+	20% {
+		transform: rotate(-105deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/* Widget Area Customization */
+.widgets {
+	border-radius: 25px;
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+	
+	}
+.footerWidgetArea {
+	width: 33.333%;
+	float: left;
+	box-sizing: border-box;
+	padding: 20px;
+	list-style: none;
+	}
+
+/* Footer */
+.site-footer { 
+	border-top: 2px solid #999;
+	
+	font-size: 0.75em;
+	background-color: rgba(0,0,0,0.7);
+	list-style: none;
+	}
+
+.footertext { padding-bottom: 10px; margin: 0; text-align: center;}
+
+/* Navigation */
+
+.site-nav ul li{
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+	text-align: left;
+	
+	}
+
+.footer ul li { 
+	display: inline-block; 
+	padding: 5px 10px;
+	margin-top: 0;
+	border-right: 1px solid #999;
+	}
+.footer ul li:last-child { border: none;}
+
+.sideMenu {
+	
+	}
+	
+.menu {padding: 0; margin: 0; }
+	
+
+/* Move elements 28px down when the admin bar is visible */
+body.admin-bar { top: 32px }
+body.admin-bar .hamburgerMenu  { top: 45px}
+body.admin-bar .slidingMenu { top: 32px}
+body.admin-bar .sidebar {height: calc(100% - 145px);}
